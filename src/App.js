@@ -42,10 +42,6 @@ const App = () => {
     const data = await res.json();
 
     setTasks([...tasks, data]);
-
-    // const id = Math.floor( Math.random() * 10000 ) + 1;
-    // const newTask = { id, ...task };
-    // setTasks( [ ...tasks, newTask ] );
   };
 
   const toggleReminder = async (id) => {
@@ -89,7 +85,7 @@ const App = () => {
         <Route
           path='/'
           exact
-          render={(props) => (
+          render={() => (
             <>
               {showAddTask && <AddTask onAdd={addTask} />}
               {tasks.length > 0 ? (
