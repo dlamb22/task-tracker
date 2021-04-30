@@ -8,6 +8,7 @@ Using npm:
 
 ```bash
 git clone https://github.com/dlamb22/task-tracker.git
+cd task-tracker
 npm install
 ```
 
